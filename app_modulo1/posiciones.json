@@ -1,0 +1,1 @@
+var textoPosiciones = '{"posiciones":[{"pos":"PT","desc":"Arquero"},{"pos":"CD","desc":"Defensor central"},{"pos":"LD","desc":"Lateral derecho"},{"pos":"LI","desc":"Lateral izquierdo"},{"pos":"MC","desc":"Mediocampista"},{"pos":"DC","desc":"Delantero"}]}'

@@ -1,0 +1,353 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html,body{
+	height: 100%;
+	width: 100%;
+	font-family: sans-serif;
+}
+div.encabezado-pie{
+	padding: 1%;
+	font-size: 1.2em;
+	font-weight: bold;
+	background-color: #5DADE2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: black;
+	width: 100%;
+	height: 15%;
+}
+div.th{
+	background-color: #2874A6;
+	width: 100%;
+	height: 15%;
+}
+#nom, #pos, #fec, #dor{
+	cursor: pointer;
+}
+form{
+	width: 100%;
+	height: 100%;
+}
+div.columna{
+	padding-top: 1%;
+	box-sizing: border-box;
+	font-size: 1.2em;
+	display: block;
+	text-align: center;
+	justify-content: center;
+	float: left;
+	background-color: #2874A6;
+	border-left: solid;
+	border-color: #2E86C1;
+	border-width: thin;
+	color: white;
+	font-weight: bold;
+	height: 100%;
+	width: 17.3%;
+}
+div.columnaBoton{
+	padding-top: 1%;
+	box-sizing: border-box;
+	font-size: 1.2em;
+	display: block;
+	text-align: center;
+	justify-content: center;
+	float: left;
+	background-color: #2874A6;
+	border-left: solid;
+	border-color: #2E86C1;
+	border-width: thin;
+	color: white;
+	font-weight: bold;
+	height: 100%;
+	width: 9.8%;
+}
+div.columnaBajas{
+	padding-top: 1%;
+	box-sizing: border-box;
+	font-size: 1.2em;
+	display: block;
+	text-align: center;
+	justify-content: center;
+	float: left;
+	background-color: #2874A6;
+	border-left: solid;
+	border-color: #2E86C1;
+	border-width: thin;
+	color: white;
+	font-weight: bold;
+	height: 100%;
+	width: 9%;
+}
+input{
+	margin-top: 1%;
+	width: 80%;
+	height: 50%;
+}
+div.clear{
+	clear: both;
+}
+div.contenedor{
+	height: 55%;
+	width: 100%;
+	overflow-y: auto;
+}
+h2{
+	position: relative;
+	left: 0%;
+}
+button{
+	cursor: pointer;
+	position: relative;
+	left: 21.2%;
+	border-radius: 15px;
+	background-color: lightgrey;
+	box-shadow: 0px 2px 0px black;
+	border-width: thin;
+	color: black;
+	margin: 0.3%;
+	height: 100%;
+	width: 10%;
+}
+button:hover{
+	background-color: lightblue;
+}
+button:active{
+	transform: scale(0.98);
+}
+button.btColumnaPDF{
+	left: 0%;
+	margin: 0%;
+	border-radius: 10px;
+	background-color: black;
+	box-shadow: 0px 2px 0px darkgrey;
+	border-width: thin;
+	color: white;
+	height: 90%;
+	width: 90%;
+}
+button.btColumnaPDF:hover{
+	background-color: lightblue;
+	color: black;
+}
+button.btColumnaModi{
+	left: 0%;
+	margin: 0%;
+	border-radius: 10px;
+	background-color: black;
+	box-shadow: 0px 2px 0px darkgrey;
+	border-width: thin;
+	color: white;
+	height: 90%;
+	width: 90%;
+}
+button.btColumnaModi:hover{
+	background-color: lightblue;
+	color: black;
+}
+button.btColumnaBorrar{
+	left: 0%;
+	margin: 0%;
+	border-radius: 10px;
+	background-color: black;
+	box-shadow: 0px 2px 0px darkgrey;
+	border-width: thin;
+	color: white;
+	height: 90%;
+	width: 90%;
+}
+button.btColumnaBorrar:hover{
+	background-color: lightblue;
+	color: black;
+}
+table{
+	width: 100%;
+	height: 100%;
+	border-collapse: collapse;
+}
+tbody{
+	width: 100%;
+	height: 100%;
+	display: table;
+	overflow-y: auto;
+}
+tr{
+	height: 20%;
+}
+tbody tr:nth-child(odd){
+	background-color: #E5E7E9;
+	color: black;
+}
+tbody tr:nth-child(even){
+	background-color: #BFC9CA;
+	color: black;
+}
+td{
+	box-sizing: border-box;
+	padding: 1%;	 
+	text-align: center;
+	border-style: solid;
+	border-width: thin;
+	border-color: black;
+	width: 17.5%;
+}
+[campo-dato="pdf"],[campo-dato="modi"],[campo-dato="baja"]{
+	box-sizing: border-box;	 
+	text-align: center;
+	border-style: solid;
+	border-width: thin;
+	border-color: black;
+	width: 10%;
+}
+#orden{
+	position: relative;
+	bottom: 8%;
+	left: 20%;
+	width: 10%;
+	height: 40%;
+}
+label{
+	position: relative;
+	left: 19.5%;
+}
+option{
+	font-weight: bold;
+}
+#registros{
+	color: black;
+	margin: 0%;
+	position: relative;
+	right: 90%;
+	bottom: 10%;
+	background-color: #5DADE2;
+	width: 20%;
+	height: 30%;
+}
+h3{
+	position: relative;
+	right: 8%;
+}
+#modalModi{
+	position: fixed;
+	left: 25%;
+	top: 25%;
+	border: solid;
+	background-color: #5DADE2;
+	border-color: #2E4053;
+	box-sizing: border-box;
+	width: 50%;
+	height: 50%;
+	display: block;
+}
+#modalAlta{
+	position: fixed;
+	left: 25%;
+	top: 25%;
+	border: solid;
+	background-color: #5DADE2;
+	border-color: #2E4053;
+	box-sizing: border-box;
+	width: 50%;
+	height: 50%;
+	display: block;
+}
+#modalRespuesta{
+	position: fixed;
+	left: 30%;
+	top: 20%;
+	border: solid;
+	background-color: #5DADE2;
+	border-color: #2E4053;
+	box-sizing: border-box;
+	width: 50%;
+	height: 50%;
+	display: block;	
+}
+#contRespuesta{
+	box-sizing: border-box;
+	padding: 0%;
+	height: 90%;
+	width: 100%;
+	background-color: lightgrey;
+	color: black;
+}
+.columnaModal{
+	box-sizing: border-box;
+	padding: 1%;
+	float: left;
+	display: block;
+	/*flex-direction: column;
+	justify-content: space-around;*/
+	width: 50%;
+	height: 70%;
+}
+div.botonEnv{
+	height: 30%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+div.encabezadoModal{
+	padding: 1%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	height: 10%;
+	width: 100%;
+	background-color: #2E4053;
+	color: #5DADE2;
+}
+button.cerrar{
+	font-weight: bold;
+	color: #5DADE2;
+	margin: 0;
+	position: relative;
+	left: 75%;
+	border: none;
+	box-shadow: none;
+	background-color: #2E4053;
+	width: 5%;
+	height: 100%;
+}
+button.cerrar:hover{
+	background-color: #2E4053;
+	font-weight: bold;
+	color: red;
+}
+#dorsalAlta, #posicionAlta, #fechaAlta, #nombreAlta, #dorsalModi, #posicionModi, #fechaModi, #nombreModi{
+	height: 20%;
+	width: 90%;
+}
+#enviarAlta{
+	position: relative;
+	left: 1%;
+	bottom: 25%;
+	width: 30%;
+	height: 30%;
+}
+#enviarModi{
+	position: relative;
+	left: 1%;
+	bottom: 25%;
+	width: 30%;
+	height: 30%;
+}
+.modalApagado{
+	visibility: hidden;
+}
+.modalPrendido{
+	visibility: visible;
+}
+.divBloq{
+	pointer-events: none;
+	opacity: 0.3;
+}
+.divAct{
+	pointer-events: auto;
+	opacity: 1;
+}
